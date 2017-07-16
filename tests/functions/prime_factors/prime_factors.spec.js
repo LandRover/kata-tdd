@@ -12,6 +12,7 @@ describe('Prime Factors', () => {
         expect(PrimeFactors.of(7)).to.be.equalTo([7]);
         expect(PrimeFactors.of(8)).to.be.equalTo([2, 2, 2]);
         expect(PrimeFactors.of(9)).to.be.equalTo([3, 3, 3]);
+        expect(PrimeFactors.of(2 * 2 * 3 * 5 * 7 * 23)).to.be.equalTo([2, 2, 3, 5, 7, 23]);
     });
 
 });
