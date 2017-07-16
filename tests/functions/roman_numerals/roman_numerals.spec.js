@@ -7,7 +7,7 @@ describe('Roman Numerals', () => {
         expect(RomanNumerals.fromNumber(2)).to.equal('II');
         expect(RomanNumerals.fromNumber(3)).to.equal('III');
         expect(RomanNumerals.fromNumber(4)).to.equal('IV');
-        expect(RomanNumerals.fromNumber(2648)).to.equal('MMDCXLVII');
+        expect(RomanNumerals.fromNumber(2648)).to.equal('MMDCXLVIII');
     });
 
 });
