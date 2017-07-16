@@ -3,6 +3,11 @@
  */
 class RomanNumerals {
 
+    numerals = [
+        {value: 4, numeral: 'IV'},
+        {value: 1, numeral: 'I'}
+    ];
+
 
     /**
      *
@@ -10,10 +15,12 @@ class RomanNumerals {
     fromNumber(n) {
         let result = '';
 
-        while(0 < n) {
-            result += 'I';
-            --n;
-        }
+        this.numerals.forEach(item => {
+            if (n >= item.value) {
+                result += item.numeral;
+                n -= item.value;
+            }
+        });
 
         return result;
     }
