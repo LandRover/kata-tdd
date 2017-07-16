@@ -18,6 +18,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "^4.1.0",
+    "chai-arrays": "^1.0.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.2.0",
     "eslint-config-airbnb": "*",
