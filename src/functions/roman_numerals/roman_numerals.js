@@ -1,4 +1,5 @@
 /**
+ *
  */
 class RomanNumerals {
 
@@ -7,10 +8,14 @@ class RomanNumerals {
      *
      */
     fromNumber(n) {
-        if (2 === n) return 'II';
-        if (3 === n) return 'III';
+        let result = '';
 
-        return 'I';
+        while(0 < n) {
+            result += 'I';
+            --n;
+        }
+
+        return result;
     }
 
 
