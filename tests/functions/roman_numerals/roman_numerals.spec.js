@@ -1,4 +1,4 @@
-import RomanNumerals from '../../../src/functions/prime_factors/prime_factors.js';
+import RomanNumerals from '../../../src/functions/prime_factors/roman_numerals.js';
 
 describe('Roman Numerals', () => {
 
