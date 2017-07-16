@@ -5,7 +5,7 @@ class PrimeFactors {
         while (1 < n) {
             let divisor = 2;
             while (n >= divisor) {
-                if (0 === n % divisor) {
+                while (0 === n % divisor) {
                     result.push(divisor);
                     n /= divisor;
                 }
