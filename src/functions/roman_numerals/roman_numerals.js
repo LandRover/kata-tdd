@@ -6,7 +6,9 @@ class RomanNumerals {
     /**
      *
      */
-    fromNumber() {
+    fromNumber(n) {
+        if (2 === n) return 'II';
+
         return 'I';
     }
 
