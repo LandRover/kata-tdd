@@ -16,7 +16,7 @@ class RomanNumerals {
         let result = '';
 
         this.numerals.forEach(item => {
-            if (n >= item.value) {
+            while (n >= item.value) {
                 result += item.numeral;
                 n -= item.value;
             }
