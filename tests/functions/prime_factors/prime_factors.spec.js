@@ -1,4 +1,4 @@
-//import Lib from '';
+import PrimeFactors from '../../../src/functions/prime_factors/prime_factors.js';
 
 describe('Prime Factors', () => {
 
