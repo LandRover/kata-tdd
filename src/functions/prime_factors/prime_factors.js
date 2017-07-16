@@ -1,8 +1,7 @@
 class PrimeFactors {
     of(n) {
-        if (2 === n) return [2];
-        if (3 === n) return [3];
-        
+        if (1 < n) return [n];
+
         return [];
     }
 }
