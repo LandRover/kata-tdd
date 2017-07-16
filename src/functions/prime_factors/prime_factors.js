@@ -12,7 +12,7 @@ class PrimeFactors {
 
 
     /**
-     * Determine the factors of a number
+     * Determine the factors of a number (Factoring)
      *
      * @param {Number} n
      *
