@@ -6,6 +6,10 @@ class PrimeFactors {
             if (0 === n % 2) {
                 result.push(2);
                 n /= 2;
+            } else
+            if (0 === n % 3) {
+                result.push(3);
+                n /= 3;
             } else {
                 result.push(n);
                 break;
