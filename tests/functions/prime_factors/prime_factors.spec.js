@@ -11,6 +11,7 @@ describe('Prime Factors', () => {
         expect(PrimeFactors.of(6)).to.deep.equal([2, 3]);
         expect(PrimeFactors.of(7)).to.deep.equal([7]);
         expect(PrimeFactors.of(8)).to.deep.equal([2, 2, 2]);
+        expect(PrimeFactors.of(9)).to.deep.equal([3, 3, 3]);
     });
 
 });
