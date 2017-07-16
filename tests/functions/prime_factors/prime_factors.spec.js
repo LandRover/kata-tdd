@@ -4,6 +4,7 @@ describe('Prime Factors', () => {
 
     it('should calculate prime factor of an int', () => {
         expect(PrimeFactors.of(1)).to.deep.equal([]);
+        expect(PrimeFactors.of(2)).to.deep.equal([2]);
     });
 
 });
