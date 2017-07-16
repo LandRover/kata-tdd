@@ -3,16 +3,13 @@ class PrimeFactors {
         let result = [];
         
         while (1 < n) {
-            if (0 === n % 2) {
-                result.push(2);
-                n /= 2;
-            } else
-            if (0 === n % 3) {
-                result.push(3);
-                n /= 3;
-            } else {
-                result.push(n);
-                break;
+            let divisor = 2;
+            while (n >= divisor) {
+                if (0 === n % divisor) {
+                    result.push(divisor);
+                    n /= divisor;
+                }
+                ++divisor;
             }
         }
 
