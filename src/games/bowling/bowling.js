@@ -20,18 +20,28 @@ class Bowling {
             score += this.throws[throwIndex + 1];
 
             // definition of spare
-            if (10 === this.throws[throwIndex] + this.throws[throwIndex + 1] || 10 === this.throws[throwIndex]) {
+            if (this._isSpare(throwIndex) || this._isStrike(throwIndex)) {
                 score += this.throws[throwIndex + 2];
             }
 
             // definition of strike
-            if (10 === this.throws[throwIndex]) {
+            if (this._isStrike(throwIndex)) {
                 throwIndex--;
             }
         }
 
 
         return score;
+    }
+
+
+    _isSpare(throwIndex) {
+        return 10 === this.throws[throwIndex] + this.throws[throwIndex + 1];
+    }
+
+
+    _isStrike(throwIndex) {
+        return 10 === this.throws[throwIndex];
     }
 
 
