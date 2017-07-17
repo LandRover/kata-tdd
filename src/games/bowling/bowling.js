@@ -2,6 +2,7 @@
  * Basic logic kata for Bowling game
  *
  * @see: http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
+ * @see: http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
  */
 class Bowling {
 
