@@ -46,7 +46,7 @@ describe('Bowling', () => {
     });
 
 
-    it('strike and all gutters', () => {
+    it('strike and all threes', () => {
         addThrows(10, 1);
         addThrows(3, 18);
 

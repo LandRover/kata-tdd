@@ -20,8 +20,13 @@ class Bowling {
             score += this.throws[throwIndex + 1];
 
             // definition of spare
-            if (10 === this.throws[throwIndex] + this.throws[throwIndex + 1]) {
+            if (10 === this.throws[throwIndex] + this.throws[throwIndex + 1] || 10 === this.throws[throwIndex]) {
                 score += this.throws[throwIndex + 2];
+            }
+
+            // definition of strike
+            if (10 === this.throws[throwIndex]) {
+                throwIndex--;
             }
         }
 
