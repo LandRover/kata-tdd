@@ -45,4 +45,12 @@ describe('Bowling', () => {
         expect(bowling.getScore()).to.equal(10 + 3 + 18 * 3);
     });
 
+
+    it('strike and all gutters', () => {
+        addThrows(10, 1);
+        addThrows(3, 18);
+
+        expect(bowling.getScore()).to.equal(10 + 3 + 3 + 18 * 3);
+    });
+
 });
