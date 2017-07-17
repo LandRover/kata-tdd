@@ -46,6 +46,14 @@ describe('Bowling', () => {
     });
 
 
+    it('strike and all gutters', () => {
+        addThrows(10, 1);
+        addThrows(0, 18);
+
+        expect(bowling.getScore()).to.equal(10);
+    });
+
+
     it('strike and all threes', () => {
         addThrows(10, 1);
         addThrows(3, 18);
