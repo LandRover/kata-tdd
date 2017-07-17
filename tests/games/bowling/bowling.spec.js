@@ -42,7 +42,7 @@ describe('Bowling', () => {
         addThrows(5, 2);
         addThrows(3, 18);
 
-        expect(bowling.getScore()).to.equal(10 + 3 + 18 * 3);
+        expect(bowling.getScore()).to.equal(10 + 3 + 18 * 3); // 67
     });
 
 
@@ -58,7 +58,14 @@ describe('Bowling', () => {
         addThrows(10, 1);
         addThrows(3, 18);
 
-        expect(bowling.getScore()).to.equal(10 + 3 + 3 + 18 * 3);
+        expect(bowling.getScore()).to.equal(10 + 3 + 3 + 18 * 3); // 70
+    });
+
+
+    it('A perfect game', () => {
+        addThrows(10, 12);
+
+        expect(bowling.getScore()).to.equal(300);
     });
 
 });
