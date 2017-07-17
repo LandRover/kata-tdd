@@ -11,4 +11,4 @@ class Bowling {
 
 }
 
-export default new Bowling();
+export default Bowling;
