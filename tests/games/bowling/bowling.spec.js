@@ -37,4 +37,12 @@ describe('Bowling', () => {
         expect(bowling.getScore()).to.equal(10);
     });
 
+
+    it('spare and all threes', () => {
+        addThrows(5, 2);
+        addThrows(3, 18);
+
+        expect(bowling.getScore()).to.equal(10 + 3 + 18 * 3);
+    });
+
 });
