@@ -12,9 +12,16 @@ class Bowling {
 
 
     getScore() {
-        return this.throws.reduce((a, b) => {
-            return a + b;
-        });
+        let score = 0,
+            gameFrames = 10;
+
+        for (let frameIndex = 0, throwIndex = 0; frameIndex < gameFrames; frameIndex++, throwIndex += 2) {
+            score += this.throws[throwIndex];
+            score += this.throws[throwIndex + 1];
+        }
+
+
+        return score;
     }
 
 
