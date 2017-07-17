@@ -9,6 +9,11 @@ class Bowling {
     }
 
 
+    getScore() {
+        return 0;
+    }
+
+
 }
 
 export default Bowling;
