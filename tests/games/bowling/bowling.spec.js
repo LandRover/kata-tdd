@@ -9,19 +9,22 @@ describe('Bowling', () => {
     });
 
 
-    it('All gutters', () => {
-        for(let i = 0; i < 20; i++) {
-            bowling.addThrow(0);
+    let addThrows = (pins, times) => {
+        for(let i = 0; i < times; i++) {
+            bowling.addThrow(pins);
         }
+    };
+
+
+    it('All gutters', () => {
+        addThrows(0, 20);
 
         expect(bowling.getScore()).to.equal(0);
     });
 
 
     it('All threes', () => {
-        for(let i = 0; i < 20; i++) {
-            bowling.addThrow(3);
-        }
+        addThrows(3, 20);
 
         expect(bowling.getScore()).to.equal(60);
     });
