@@ -17,4 +17,13 @@ describe('Bowling', () => {
         expect(bowling.getScore()).to.equal(0);
     });
 
+
+    it('All threes', () => {
+        for(let i = 0; i < 20; i++) {
+            bowling.addThrow(3);
+        }
+
+        expect(bowling.getScore()).to.equal(60);
+    });
+
 });
