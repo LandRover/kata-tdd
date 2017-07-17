@@ -3,14 +3,16 @@
  */
 class Bowling {
 
+    score = 0;
+
 
     addThrow(pins) {
-
+        this.score += pins;
     }
 
 
     getScore() {
-        return 0;
+        return this.score;
     }
 
 
