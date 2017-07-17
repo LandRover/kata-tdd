@@ -29,4 +29,12 @@ describe('Bowling', () => {
         expect(bowling.getScore()).to.equal(60);
     });
 
+
+    it('spare and all gutters', () => {
+        addThrows(5, 2); // 2x 1st throw with 1 pin, and 2nd throw with 9 pins = spare.
+        addThrows(0, 18); // nothing more, no pins hit for 18 following throws
+
+        expect(bowling.getScore()).to.equal(10);
+    });
+
 });
