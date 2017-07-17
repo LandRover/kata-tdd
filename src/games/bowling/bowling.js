@@ -18,6 +18,11 @@ class Bowling {
         for (let frameIndex = 0, throwIndex = 0; frameIndex < gameFrames; frameIndex++, throwIndex += 2) {
             score += this.throws[throwIndex];
             score += this.throws[throwIndex + 1];
+
+            // definition of spare
+            if (10 === this.throws[throwIndex] + this.throws[throwIndex + 1]) {
+                score += this.throws[throwIndex + 2];
+            }
         }
 
 
